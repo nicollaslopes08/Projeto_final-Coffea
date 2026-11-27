@@ -1,0 +1,64 @@
+/* ==================== CONTATO ==================== */
+.secao-final {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px 80px;
+  scroll-snap-align: start;
+  color: #261f1a;
+  background: url("https://raw.githubusercontent.com/Millene-Oliveira/Projeto_coffea/refs/heads/main/Imagens/fundo_final_geral.jpg") center / cover no-repeat;
+}
+
+.cartao-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 74%;
+  max-width: 960px;
+  padding: 36px 50px 42px;
+  margin-bottom: 24px;
+  background: rgba(218, 211, 198, 0.72);
+  border-radius: 36px;
+}
+
+.cabecalho-contato { margin-bottom: 28px; text-align: center; }
+.cabecalho-contato h2 {
+  margin-bottom: 4px;
+  font-size: clamp(32px, 3.6vw, 44px);
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.slogan { font-size: clamp(18px, 2vw, 24px); }
+
+.info-contato {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 650px;
+}
+
+/* Textos em Arial */
+.coluna-info, .rodape-final { font-family: Arial, sans-serif; font-size: 13px; }
+.coluna-info h3 { margin-bottom: 4px; font-size: 13px; letter-spacing: 0.5px; }
+.coluna-info p { line-height: 1.55; }
+
+.rodape-final {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px 20px;
+  background: rgba(218, 211, 198, 0.65);
+  text-align: center;
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 700px) {
+  .secao-final { justify-content: center; padding: 40px 15px 70px; }
+  .cartao-contato { width: 94%; padding: 28px 22px; border-radius: 24px; }
+  .info-contato { flex-direction: column; gap: 20px; text-align: center; }
+}
